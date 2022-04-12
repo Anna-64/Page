@@ -138,7 +138,7 @@ public class MoneyTransferTest {
     var dashboardPage = verificationPage.validVerify(verifyInfo);
     var firstCardInfo = getFirstCardInfo();
     var secondCardInfo = getSecondCardInfo();
-    int amount = 20000;
+    int amount = 9999;
     var expectedBalanceFirstCard = dashboardPage.getCardBalance(firstCardInfo) - amount;
     var expectedBalanceSecondCard = dashboardPage.getCardBalance(secondCardInfo) + amount;
     var transferPage = dashboardPage.selectCardToTransfer(secondCardInfo);
